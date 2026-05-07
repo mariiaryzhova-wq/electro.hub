@@ -1,3 +1,5 @@
+Посилання на github - https://github.com/mariiaryzhova-wq/electro.hub
+
 ⚡ ElectroHub — Сайт-каталог радіодеталей
 <div align="center">
 
