@@ -1,0 +1,4 @@
+/* catalog.css — підключає спільні стилі layout.css */
+/* Стилі каталогу містяться у layout.css (першій секції) */
+@import url('layout.css');
+ 
