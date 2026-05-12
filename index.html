@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ElectroHub — провідний постачальник радіодеталей та електронних компонентів. Резистори, конденсатори, мікросхеми, транзистори.">
+  <meta name="keywords" content="радіодеталі, електронні компоненти, резистори, конденсатори, мікросхеми, транзистори, діоди, котушки">
+  <meta name="author" content="ElectroHub">
+  <meta property="og:title" content="ElectroHub — Каталог радіодеталей">
+  <meta property="og:description" content="Широкий асортимент електронних компонентів за найкращими цінами">
+  <meta property="og:type" content="website">
+  <title>ElectroHub — Каталог радіодеталей</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <!-- Хлібні крихти -->
+  <nav class="breadcrumbs" aria-label="breadcrumb">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item breadcrumbs__item--active"><a href="index.html" class="breadcrumbs__link">Головна</a></li>
+    </ol>
+  </nav>
+ 
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <span class="header__logo-icon">⚡</span>
+        <div class="header__logo-text">
+          <span class="header__logo-main">ElectroHub</span>
+          <span class="header__logo-sub">Радіодеталі & Компоненти</span>
+        </div>
+      </div>
+ 
+      <!-- Гамбургер для мобільних -->
+      <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+      <label for="menu-toggle" class="header__burger" aria-label="Меню">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </label>
+ 
+      <!-- НАВІГАЦІЯ з dropdown -->
+      <nav class="header__nav nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Головна</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="catalog.html" class="nav__link">Каталог ▾</a>
+            <ul class="nav__dropdown">
+              <li><a href="catalog.html#resistors" class="nav__dropdown-link">Резистори</a></li>
+              <li><a href="catalog.html#capacitors" class="nav__dropdown-link">Конденсатори</a></li>
+              <li><a href="catalog.html#transistors" class="nav__dropdown-link">Транзистори</a></li>
+              <li><a href="catalog.html#diodes" class="nav__dropdown-link">Діоди</a></li>
+              <li><a href="catalog.html#microcircuits" class="nav__dropdown-link">Мікросхеми</a></li>
+              <li><a href="catalog.html#inductors" class="nav__dropdown-link">Котушки</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#" class="nav__link">Послуги ▾</a>
+            <ul class="nav__dropdown">
+              <li><a href="#" class="nav__dropdown-link">Доставка</a></li>
+              <li><a href="#" class="nav__dropdown-link">Оптові замовлення</a></li>
+              <li><a href="#" class="nav__dropdown-link">Технічна підтримка</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="layout.html" class="nav__link">Про нас</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- MAIN -->
+  <main class="main">
+ 
+    <!-- HERO секція -->
+    <section class="hero" aria-label="Головний банер">
+      <div class="hero__content">
+        <h1 class="hero__title">Ваш надійний<br><span class="hero__title-accent">постачальник</span><br>радіодеталей</h1>
+        <p class="hero__subtitle">Понад 50 000 найменувань електронних компонентів. Доставка по всій Україні. Гарантія якості.</p>
+        <div class="hero__actions">
+          <a href="catalog.html" class="btn btn--primary">Переглянути каталог</a>
+          <a href="#about" class="btn btn--outline">Дізнатись більше</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number">50k+</span>
+            <span class="hero__stat-label">позицій</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">15+</span>
+            <span class="hero__stat-label">років досвіду</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">10k+</span>
+            <span class="hero__stat-label">клієнтів</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__circuit">
+          <div class="hero__circuit-dot hero__circuit-dot--1"></div>
+          <div class="hero__circuit-dot hero__circuit-dot--2"></div>
+          <div class="hero__circuit-dot hero__circuit-dot--3"></div>
+          <div class="hero__circuit-line hero__circuit-line--h1"></div>
+          <div class="hero__circuit-line hero__circuit-line--h2"></div>
+          <div class="hero__circuit-line hero__circuit-line--v1"></div>
+          <div class="hero__component hero__component--chip">IC</div>
+          <div class="hero__component hero__component--cap">C</div>
+          <div class="hero__component hero__component--res">R</div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Категорії -->
+    <section class="categories" id="categories" aria-label="Категорії товарів">
+      <div class="categories__container">
+        <h2 class="section-title">Категорії <span class="section-title__accent">компонентів</span></h2>
+        <p class="section-subtitle">Весь спектр радіоелектронних компонентів для ваших проектів</p>
+ 
+        <div class="categories__grid">
+          <article class="category-card">
+            <div class="category-card__icon">🔴</div>
+            <h3 class="category-card__title">Резистори</h3>
+            <p class="category-card__desc">Постійні, змінні, термо- та фоторезистори всіх номіналів</p>
+            <span class="category-card__count">12 400+ позицій</span>
+            <a href="catalog.html#resistors" class="category-card__link">Перейти →</a>
+          </article>
+ 
+          <article class="category-card">
+            <div class="category-card__icon">🔵</div>
+            <h3 class="category-card__title">Конденсатори</h3>
+            <p class="category-card__desc">Електролітичні, керамічні, плівкові та танталові конденсатори</p>
+            <span class="category-card__count">9 800+ позицій</span>
+            <a href="catalog.html#capacitors" class="category-card__link">Перейти →</a>
+          </article>
+ 
+          <article class="category-card">
+            <div class="category-card__icon">🟢</div>
+            <h3 class="category-card__title">Транзистори</h3>
+            <p class="category-card__desc">NPN/PNP, польові, потужні та ВЧ транзистори</p>
+            <span class="category-card__count">6 200+ позицій</span>
+            <a href="catalog.html#transistors" class="category-card__link">Перейти →</a>
+          </article>
+ 
+          <article class="category-card">
+            <div class="category-card__icon">🟡</div>
+            <h3 class="category-card__title">Діоди</h3>
+            <p class="category-card__desc">Випрямні, стабілітрони, світлодіоди, варикапи</p>
+            <span class="category-card__count">7 500+ позицій</span>
+            <a href="catalog.html#diodes" class="category-card__link">Перейти →</a>
+          </article>
+ 
+          <article class="category-card">
+            <div class="category-card__icon">🟠</div>
+            <h3 class="category-card__title">Мікросхеми</h3>
+            <p class="category-card__desc">Логічні, аналогові, мікроконтролери, процесори</p>
+            <span class="category-card__count">14 100+ позицій</span>
+            <a href="catalog.html#microcircuits" class="category-card__link">Перейти →</a>
+          </article>
+ 
+          <article class="category-card">
+            <div class="category-card__icon">🟣</div>
+            <h3 class="category-card__title">Котушки індуктивності</h3>
+            <p class="category-card__desc">Дроселі, трансформатори, котушки SMD та THT</p>
+            <span class="category-card__count">4 300+ позицій</span>
+            <a href="catalog.html#inductors" class="category-card__link">Перейти →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Про компанію -->
+    <section class="about" id="about" aria-label="Про компанію">
+      <div class="about__container">
+        <aside class="about__sidebar">
+          <h2 class="section-title">Чому <span class="section-title__accent">ElectroHub?</span></h2>
+          <ul class="about__list">
+            <li class="about__list-item">✅ Офіційні постачальники провідних брендів</li>
+            <li class="about__list-item">✅ Сертифіковані оригінальні компоненти</li>
+            <li class="about__list-item">✅ Швидка доставка: 1-3 дні</li>
+            <li class="about__list-item">✅ Технічна підтримка 24/7</li>
+            <li class="about__list-item">✅ Гнучка система знижок для оптовиків</li>
+            <li class="about__list-item">✅ Повернення товару протягом 30 днів</li>
+          </ul>
+          <ol class="about__steps">
+            <li>Оберіть потрібні компоненти в каталозі</li>
+            <li>Оформіть замовлення онлайн або по телефону</li>
+            <li>Отримайте товар зручним способом доставки</li>
+          </ol>
+        </aside>
+        <div class="about__content">
+          <article class="about__article">
+            <h3 class="about__article-title">Наша місія</h3>
+            <p>ElectroHub — це провідний постачальник електронних компонентів в Україні. Ми працюємо з <strong>2008 року</strong> і за цей час здобули довіру тисяч клієнтів: від любителів-радіоаматорів до великих промислових підприємств.</p>
+            <p>Наша команда <em>кваліфікованих фахівців</em> завжди готова допомогти вам підібрати оптимальні компоненти для вашого проекту, розрахувати схему або вирішити технічну задачу.</p>
+            <h4>Наші переваги</h4>
+            <p>Ми пропонуємо найширший асортимент в Україні. Всі компоненти проходять <strong>вхідний контроль якості</strong> та мають відповідні сертифікати.</p>
+            <h5>Гарантії якості</h5>
+            <p>Кожна партія товару супроводжується технічною документацією. Ми гарантуємо <em>100% оригінальність</em> усіх компонентів.</p>
+            <h6>Додаткові послуги</h6>
+            <p>Технічна підтримка, підбір аналогів, розрахунок схем — безкоштовно для наших клієнтів.</p>
+          </article>
+ 
+          <!-- Таблиця -->
+          <table class="data-table" aria-label="Порівняння планів обслуговування">
+            <caption>Умови для різних категорій клієнтів</caption>
+            <thead>
+              <tr>
+                <th>Категорія</th>
+                <th>Мін. замовлення</th>
+                <th>Знижка</th>
+                <th>Доставка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Роздріб</td>
+                <td>від 100 грн</td>
+                <td>—</td>
+                <td>платна</td>
+              </tr>
+              <tr>
+                <td>Малий опт</td>
+                <td>від 2 000 грн</td>
+                <td>5%</td>
+                <td>платна</td>
+              </tr>
+              <tr>
+                <td>Середній опт</td>
+                <td>від 10 000 грн</td>
+                <td>10%</td>
+                <td>безкоштовна</td>
+              </tr>
+              <tr>
+                <td>Великий опт</td>
+                <td>від 50 000 грн</td>
+                <td>15%</td>
+                <td>безкоштовна</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Акордеон FAQ -->
+    <section class="faq" aria-label="Часті запитання">
+      <div class="faq__container">
+        <h2 class="section-title">Часті <span class="section-title__accent">запитання</span></h2>
+ 
+        <div class="accordion">
+          <div class="accordion__item">
+            <input type="checkbox" id="faq1" class="accordion__toggle">
+            <label for="faq1" class="accordion__header">Як оформити замовлення?</label>
+            <div class="accordion__body">
+              <p>Оберіть товари в каталозі, додайте до кошика та оформіть замовлення. Наш менеджер зв'яжеться з вами протягом 30 хвилин для підтвердження.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="faq2" class="accordion__toggle">
+            <label for="faq2" class="accordion__header">Які способи оплати доступні?</label>
+            <div class="accordion__body">
+              <p>Готівка, банківський переказ, картки Visa/MasterCard, оплата при отриманні (накладений платіж).</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="faq3" class="accordion__toggle">
+            <label for="faq3" class="accordion__header">Чи є гарантія на компоненти?</label>
+            <div class="accordion__body">
+              <p>Так! Всі компоненти мають гарантію виробника. Ми також надаємо власну гарантію 12 місяців на всі товари.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <input type="checkbox" id="faq4" class="accordion__toggle">
+            <label for="faq4" class="accordion__header">Доставка в інші міста?</label>
+            <div class="accordion__body">
+              <p>Доставляємо по всій Україні через Нову Пошту та Укрпошту. Термін доставки 1-3 робочих дні залежно від регіону.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Галерея -->
+    <section class="gallery" aria-label="Галерея компонентів">
+      <div class="gallery__container">
+        <h2 class="section-title">Наші <span class="section-title__accent">компоненти</span></h2>
+        <div class="gallery__grid">
+          <figure class="gallery__item">
+            <img src="https://placehold.co/300x200/0d1117/00ff88?text=Резистори" alt="Резистори різних номіналів" class="gallery__img" width="300" height="200">
+            <figcaption class="gallery__caption">Резистори</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://placehold.co/300x200/0d1117/00aaff?text=Конденсатори" alt="Електролітичні конденсатори" class="gallery__img" width="300" height="200">
+            <figcaption class="gallery__caption">Конденсатори</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://placehold.co/300x200/0d1117/ff6600?text=Мікросхеми" alt="Інтегральні мікросхеми" class="gallery__img" width="300" height="200">
+            <figcaption class="gallery__caption">Мікросхеми</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://placehold.co/300x200/0d1117/ff0066?text=Транзистори" alt="Транзистори NPN PNP" class="gallery__img" width="300" height="200">
+            <figcaption class="gallery__caption">Транзистори</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://placehold.co/300x200/0d1117/ffcc00?text=Діоди" alt="Різні типи діодів" class="gallery__img" width="300" height="200">
+            <figcaption class="gallery__caption">Діоди</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://placehold.co/300x200/0d1117/aa44ff?text=Котушки" alt="Котушки індуктивності" class="gallery__img" width="300" height="200">
+            <figcaption class="gallery__caption">Котушки</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Мультимедіа секція -->
+    <section class="media-section" aria-label="Мультимедіа">
+      <div class="media-section__container">
+        <h2 class="section-title">Навчальні <span class="section-title__accent">матеріали</span></h2>
+        <div class="media-section__grid">
+          <div class="media-section__video">
+            <h3>Відео: Основи пайки</h3>
+            <video controls width="100%" poster="https://placehold.co/640x360/0d1117/00ff88?text=Відео+про+пайку">
+              <source src="about:blank" type="video/mp4">
+              Ваш браузер не підтримує відео.
+            </video>
+          </div>
+          <div class="media-section__audio">
+            <h3>Аудіо: Підкаст про електроніку</h3>
+            <audio controls style="width:100%">
+              <source src="about:blank" type="audio/mpeg">
+              Ваш браузер не підтримує аудіо.
+            </audio>
+            <p>Епізод 1: Вибір компонентів для початківців</p>
+          </div>
+          <div class="media-section__iframe">
+            <h3>Корисні ресурси</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.0!2d36.23!3d49.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzM2LjAiTiAzNsKwMTMnNDguMCJF!5e0!3m2!1suk!2sua!4v1234567890"
+              width="100%"
+              height="200"
+              style="border:0;border-radius:8px;"
+              allowfullscreen=""
+              loading="lazy"
+              title="Карта розташування ElectroHub"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Іпотечний калькулятор (для демонстрації JS) -->
+    <section class="calculator" id="calculator" aria-label="Калькулятор кредиту">
+      <div class="calculator__container">
+        <h2 class="section-title">Калькулятор <span class="section-title__accent">кредиту</span></h2>
+        <p class="section-subtitle">Розрахуйте вартість розтермінування для корпоративних клієнтів</p>
+        <div class="calculator__form-wrapper">
+          <div class="calculator__inputs">
+            <label class="form-label">
+              Сума кредиту (грн)
+              <input type="number" id="loanAmount" class="form-input" value="100000" min="1000" max="10000000">
+            </label>
+            <label class="form-label">
+              Відсоткова ставка (% на рік)
+              <input type="number" id="loanRate" class="form-input" value="18" min="1" max="100" step="0.1">
+            </label>
+            <label class="form-label">
+              Термін (місяців)
+              <input type="number" id="loanMonths" class="form-input" value="12" min="1" max="120">
+            </label>
+            <button onclick="calculateLoan()" class="btn btn--primary">Розрахувати</button>
+          </div>
+          <div class="calculator__result" id="loanResult">
+            <p>Введіть дані та натисніть "Розрахувати"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Прогрес індикатор та Годинник -->
+    <section class="widgets-section" aria-label="Віджети">
+      <div class="widgets-section__container">
+        <div class="widgets-section__grid">
+          <div class="widget-card">
+            <h3 class="widget-card__title">Наповненість складу</h3>
+            <div class="progress-bar">
+              <div class="progress-bar__label">
+                <span>Резистори</span><span>87%</span>
+              </div>
+              <div class="progress-bar__track"><div class="progress-bar__fill" style="width:87%"></div></div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__label">
+                <span>Конденсатори</span><span>72%</span>
+              </div>
+              <div class="progress-bar__track"><div class="progress-bar__fill progress-bar__fill--blue" style="width:72%"></div></div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__label">
+                <span>Мікросхеми</span><span>95%</span>
+              </div>
+              <div class="progress-bar__track"><div class="progress-bar__fill progress-bar__fill--orange" style="width:95%"></div></div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__label">
+                <span>Транзистори</span><span>63%</span>
+              </div>
+              <div class="progress-bar__track"><div class="progress-bar__fill progress-bar__fill--red" style="width:63%"></div></div>
+            </div>
+          </div>
+ 
+          <!-- Годинник -->
+          <div class="widget-card">
+            <h3 class="widget-card__title">Поточний час</h3>
+            <div class="clock" id="clock" aria-live="polite">
+              <div class="clock__face">
+                <div class="clock__hand clock__hand--hour" id="hourHand"></div>
+                <div class="clock__hand clock__hand--minute" id="minuteHand"></div>
+                <div class="clock__hand clock__hand--second" id="secondHand"></div>
+                <div class="clock__center"></div>
+                <span class="clock__num" style="top:4px;left:50%;transform:translateX(-50%)">12</span>
+                <span class="clock__num" style="right:4px;top:50%;transform:translateY(-50%)">3</span>
+                <span class="clock__num" style="bottom:4px;left:50%;transform:translateX(-50%)">6</span>
+                <span class="clock__num" style="left:4px;top:50%;transform:translateY(-50%)">9</span>
+              </div>
+            </div>
+            <p id="digitalClock" class="clock__digital" aria-live="polite">00:00:00</p>
+          </div>
+ 
+          <!-- Спіраль -->
+          <div class="widget-card">
+            <h3 class="widget-card__title">Електричне поле</h3>
+            <div class="spiral-container">
+              <div class="spiral"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Форма замовлення -->
+    <section class="order-form" id="contacts" aria-label="Форма замовлення">
+      <div class="order-form__container">
+        <h2 class="section-title">Зробіть <span class="section-title__accent">замовлення</span></h2>
+ 
+        <div class="order-form__wrapper">
+          <div class="order-form__info">
+            <h3>Зв'яжіться з нами</h3>
+            <p>📞 <a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+            <p>📧 <a href="mailto:info@electrohub.ua">info@electrohub.ua</a></p>
+            <p>🌐 <a href="https://electrohub.ua" target="_blank" rel="noopener">electrohub.ua</a></p>
+            <p>📍 м. Харків, вул. Сумська, 1</p>
+ 
+            <!-- Стилізовані чекбокси -->
+            <div class="preferences">
+              <h4>Підписки:</h4>
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" id="pref1" checked>
+                <span class="checkbox-custom"></span>
+                Нові надходження
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" id="pref2">
+                <span class="checkbox-custom"></span>
+                Спеціальні пропозиції
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" id="pref3">
+                <span class="checkbox-custom"></span>
+                Технічні новини
+              </label>
+            </div>
+          </div>
+ 
+          <form class="form" id="orderForm" onsubmit="handleFormSubmit(event)">
+            <div class="form__group">
+              <label class="form-label" for="name">Ваше ім'я *</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Іван Петренко" required maxlength="50">
+            </div>
+            <div class="form__group">
+              <label class="form-label" for="email">Email *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="ivan@example.com" required maxlength="100">
+            </div>
+            <div class="form__group">
+              <label class="form-label" for="phone">Телефон *</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+380XXXXXXXXX" required pattern="^\+380\d{9}$" maxlength="13">
+            </div>
+            <div class="form__group">
+              <label class="form-label" for="website">Сайт компанії</label>
+              <input type="url" id="website" name="website" class="form-input" placeholder="https://yourcompany.ua">
+            </div>
+            <div class="form__group">
+              <label class="form-label" for="order-date">Бажана дата доставки</label>
+              <input type="datetime-local" id="order-date" name="order-date" class="form-input">
+            </div>
+            <div class="form__group">
+              <label class="form-label" for="message">Ваше замовлення</label>
+              <textarea id="message" name="message" class="form-input form-input--textarea" placeholder="Опишіть потрібні компоненти..." rows="4" maxlength="1000"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Відправити замовлення</button>
+            <p id="formMessage" class="form__message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Блокнот LocalStorage -->
+    <section class="notepad-section" aria-label="Блокнот">
+      <div class="notepad-section__container">
+        <h2 class="section-title">Мій <span class="section-title__accent">блокнот</span></h2>
+        <p class="section-subtitle">Ваші нотатки зберігаються автоматично (LocalStorage)</p>
+        <div class="notepad">
+          <textarea id="notepadText" class="notepad__textarea" placeholder="Запишіть потрібні компоненти або нотатки тут..."></textarea>
+          <div class="notepad__actions">
+            <button onclick="saveNote()" class="btn btn--primary">💾 Зберегти</button>
+            <button onclick="clearNote()" class="btn btn--outline">🗑 Очистити</button>
+          </div>
+          <p id="notepadStatus" class="notepad__status"></p>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Пошук по регулярному виразу -->
+    <section class="regex-section" aria-label="Пошук по тексту">
+      <div class="regex-section__container">
+        <h2 class="section-title">Пошук <span class="section-title__accent">артикулу</span></h2>
+        <p class="section-subtitle">Введіть текст — знайдемо номери кредитних карток та артикули товарів</p>
+        <div class="regex-form">
+          <textarea id="regexInput" class="form-input form-input--textarea" rows="3" placeholder="Вставте текст для перевірки. Наприклад: Оплата карткою 4111 1111 1111 1111 або артикул R-4k7-0805"></textarea>
+          <button onclick="searchPatterns()" class="btn btn--primary">🔍 Знайти</button>
+          <div id="regexResult" class="regex-result"></div>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">⚡ ElectroHub</span>
+          <p class="footer__tagline">Ваш надійний постачальник електронних компонентів з 2008 року</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
+            <a href="#" class="footer__social-link" aria-label="Telegram">tg</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Каталог</h4>
+          <ul class="footer__list">
+            <li><a href="catalog.html#resistors" class="footer__link">Резистори</a></li>
+            <li><a href="catalog.html#capacitors" class="footer__link">Конденсатори</a></li>
+            <li><a href="catalog.html#transistors" class="footer__link">Транзистори</a></li>
+            <li><a href="catalog.html#diodes" class="footer__link">Діоди</a></li>
+            <li><a href="catalog.html#microcircuits" class="footer__link">Мікросхеми</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Компанія</h4>
+          <ul class="footer__list">
+            <li><a href="layout.html" class="footer__link">Про нас</a></li>
+            <li><a href="#" class="footer__link">Доставка і оплата</a></li>
+            <li><a href="#" class="footer__link">Гарантія</a></li>
+            <li><a href="#contacts" class="footer__link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h4 class="footer__heading">Контакти</h4>
+          <p>📞 +38 (044) 123-45-67</p>
+          <p>📧 info@electrohub.ua</p>
+          <p>📍 м. Харків, вул. Сумська, 1</p>
+          <p>🕐 Пн-Пт: 9:00 — 18:00</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2008–<span id="currentYear"></span> ElectroHub. Всі права захищені.</p>
+        <p id="browserInfo" class="footer__browser"></p>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Floating кнопка (деформується при hover) -->
+  <a href="#categories" class="float-btn" id="floatBtn" aria-label="До каталогу">
+    <span class="float-btn__icon">⚡</span>
+  </a>
+ 
+  <!-- Стрибаюча картинка -->
+  <div id="jumpingImage" class="jumping-image" aria-hidden="true">⚙️</div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
