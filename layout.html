@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Про компанію ElectroHub — історія, команда, досягнення, партнери. Провідний постачальник радіодеталей в Україні з 2008 року.">
+  <meta name="keywords" content="ElectroHub про компанію, постачальник радіодеталей Україна, команда, партнери, сертифікати">
+  <meta name="author" content="ElectroHub">
+  <title>Про компанію — ElectroHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <!-- Хлібні крихти -->
+  <nav class="breadcrumbs" aria-label="breadcrumb">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">Головна</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--active">
+        <a href="layout.html" class="breadcrumbs__link">Про компанію</a>
+      </li>
+    </ol>
+  </nav>
+ 
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-icon">⚡</span>
+        <div class="header__logo-text">
+          <span class="header__logo-main">ElectroHub</span>
+          <span class="header__logo-sub">Радіодеталі & Компоненти</span>
+        </div>
+      </a>
+ 
+      <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+      <label for="menu-toggle" class="header__burger" aria-label="Меню">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </label>
+ 
+      <nav class="header__nav nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="catalog.html" class="nav__link">Каталог ▾</a>
+            <ul class="nav__dropdown">
+              <li><a href="catalog.html#resistors"     class="nav__dropdown-link">Резистори</a></li>
+              <li><a href="catalog.html#capacitors"    class="nav__dropdown-link">Конденсатори</a></li>
+              <li><a href="catalog.html#transistors"   class="nav__dropdown-link">Транзистори</a></li>
+              <li><a href="catalog.html#diodes"        class="nav__dropdown-link">Діоди</a></li>
+              <li><a href="catalog.html#microcircuits" class="nav__dropdown-link">Мікросхеми</a></li>
+              <li><a href="catalog.html#inductors"     class="nav__dropdown-link">Котушки</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#" class="nav__link">Послуги ▾</a>
+            <ul class="nav__dropdown">
+              <li><a href="#" class="nav__dropdown-link">Доставка</a></li>
+              <li><a href="#" class="nav__dropdown-link">Оптові замовлення</a></li>
+              <li><a href="#" class="nav__dropdown-link">Технічна підтримка</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="layout.html" class="nav__link nav__link--active">Про нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contacts" class="nav__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="main">
+ 
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="layout-hero">
+      <div class="layout-hero__container">
+        <h1 class="layout-hero__title">
+          Про <span class="section-title__accent">ElectroHub</span>
+        </h1>
+        <p class="layout-hero__subtitle">
+          З 2008 року ми забезпечуємо українських інженерів, радіоаматорів та виробників
+          якісними електронними компонентами. Наша місія — робити електроніку доступною.
+        </p>
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         GRID LAYOUT — складна сітка (демонстрація CSS Grid)
+         Ряд 1: 2 рівних блоки
+         Ряд 2: 3 вкладені блоки
+         Ряд 3: блок на 7 колонок + залишок (2 колонки)
+    ============================================================ -->
+    <section class="grid-demo" aria-label="CSS Grid демонстрація">
+      <div class="grid-demo__container">
+        <h2 class="section-title">
+          Наша <span class="section-title__accent">структура</span>
+        </h2>
+        <p class="section-subtitle">
+          CSS Grid Layout — складна сітка з вкладеними блоками
+        </p>
+ 
+        <!-- Головна 9-колонкова сітка -->
+        <div class="main-grid">
+ 
+          <!-- РЯД 1: 2 рівних блоки (по 4.5 колонки = 50/50) -->
+          <div class="main-grid__block main-grid__block--mission">
+            <div class="grid-block">
+              <div class="grid-block__icon">🎯</div>
+              <h3 class="grid-block__title">Місія компанії</h3>
+              <p class="grid-block__text">
+                Ми прагнемо зробити електронні компоненти доступними для кожного —
+                від студента-радіоаматора до великого промислового підприємства.
+                Широкий асортимент, чесні ціни, швидка доставка.
+              </p>
+              <ul class="grid-block__list">
+                <li>✦ Якість без компромісів</li>
+                <li>✦ Прозорість і чесність</li>
+                <li>✦ Технічна підтримка</li>
+              </ul>
+            </div>
+          </div>
+ 
+          <div class="main-grid__block main-grid__block--vision">
+            <div class="grid-block">
+              <div class="grid-block__icon">🔭</div>
+              <h3 class="grid-block__title">Бачення майбутнього</h3>
+              <p class="grid-block__text">
+                До 2030 року ми плануємо стати найбільшим онлайн-дистриб'ютором
+                електронних компонентів в Східній Європі з власними складами
+                у 5 містах України.
+              </p>
+              <ul class="grid-block__list">
+                <li>✦ Автоматизований склад</li>
+                <li>✦ Доставка за 24 години</li>
+                <li>✦ 100 000+ позицій</li>
+              </ul>
+            </div>
+          </div>
+ 
+          <!-- РЯД 2: 3 вкладені блоки (3+3+3 колонки) -->
+          <div class="main-grid__block main-grid__block--nested-1">
+            <div class="grid-block grid-block--accent-green">
+              <div class="grid-block__number">15+</div>
+              <h4 class="grid-block__subtitle">Років на ринку</h4>
+              <p class="grid-block__small">
+                Засновані у 2008 році. Пережили кризи, виросли у лідера ринку.
+              </p>
+            </div>
+          </div>
+ 
+          <div class="main-grid__block main-grid__block--nested-2">
+            <div class="grid-block grid-block--accent-blue">
+              <div class="grid-block__number">50k+</div>
+              <h4 class="grid-block__subtitle">Найменувань товарів</h4>
+              <p class="grid-block__small">
+                Від резисторів за 0.30 грн до мікроконтролерів провідних брендів.
+              </p>
+            </div>
+          </div>
+ 
+          <div class="main-grid__block main-grid__block--nested-3">
+            <div class="grid-block grid-block--accent-orange">
+              <div class="grid-block__number">10k+</div>
+              <h4 class="grid-block__subtitle">Задоволених клієнтів</h4>
+              <p class="grid-block__small">
+                Постійні замовники з усіх регіонів України та з-за кордону.
+              </p>
+            </div>
+          </div>
+ 
+          <!-- РЯД 3: великий блок (7 колонок) + бічний (2 колонки) -->
+          <div class="main-grid__block main-grid__block--wide">
+            <div class="grid-block grid-block--wide">
+              <h3 class="grid-block__title">Хронологія розвитку компанії</h3>
+              <div class="timeline">
+                <div class="timeline__item">
+                  <span class="timeline__year">2008</span>
+                  <div class="timeline__content">
+                    <strong>Заснування</strong> — перший офіс у Харкові, 500 найменувань товарів
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <span class="timeline__year">2011</span>
+                  <div class="timeline__content">
+                    <strong>Онлайн-магазин</strong> — запуск інтернет-каталогу, 5 000 позицій
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <span class="timeline__year">2015</span>
+                  <div class="timeline__content">
+                    <strong>Власний склад</strong> — 1 200 м², 20 000 позицій, філія в Києві
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <span class="timeline__year">2019</span>
+                  <div class="timeline__content">
+                    <strong>Офіційний дистриб'ютор</strong> — партнерство з Vishay, Murata, Yageo
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <span class="timeline__year">2023</span>
+                  <div class="timeline__content">
+                    <strong>50 000+ позицій</strong> — нова логістична система, доставка 1–3 дні
+                  </div>
+                </div>
+                <div class="timeline__item timeline__item--current">
+                  <span class="timeline__year">2025</span>
+                  <div class="timeline__content">
+                    <strong>Сьогодні</strong> — лідер ринку, 10 000+ клієнтів по всій Україні
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="main-grid__block main-grid__block--side">
+            <div class="grid-block grid-block--side">
+              <h4 class="grid-block__subtitle">Сертифікати</h4>
+              <div class="cert-list">
+                <div class="cert-item">
+                  <span class="cert-item__icon">🏆</span>
+                  <span class="cert-item__text">ISO 9001:2015</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-item__icon">✅</span>
+                  <span class="cert-item__text">CE Certified</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-item__icon">🌿</span>
+                  <span class="cert-item__text">RoHS Compliant</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-item__icon">⭐</span>
+                  <span class="cert-item__text">Рейтинг 4.9/5</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-item__icon">🤝</span>
+                  <span class="cert-item__text">Authorized Dist.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        </div><!-- /main-grid -->
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         КОМАНДА
+    ============================================================ -->
+    <section class="team" aria-label="Наша команда">
+      <div class="team__container">
+        <h2 class="section-title">
+          Наша <span class="section-title__accent">команда</span>
+        </h2>
+        <p class="section-subtitle">
+          Кваліфіковані фахівці з досвідом у галузі електроніки
+        </p>
+ 
+        <div class="team__grid">
+ 
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--1">
+              <span class="team-card__initials">ОК</span>
+            </div>
+            <h3 class="team-card__name">Олексій Коваленко</h3>
+            <span class="team-card__role">Засновник & CEO</span>
+            <p class="team-card__bio">
+              Інженер-електронік з 20-річним досвідом. Закінчив ХНУРЕ, кандидат технічних наук.
+              Автор понад 30 наукових публікацій у галузі силової електроніки.
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">Силова електроніка</span>
+              <span class="skill-tag">R&D</span>
+              <span class="skill-tag">Управління</span>
+            </div>
+          </article>
+ 
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--2">
+              <span class="team-card__initials">НС</span>
+            </div>
+            <h3 class="team-card__name">Наталія Савченко</h3>
+            <span class="team-card__role">Директор з продажів</span>
+            <p class="team-card__bio">
+              Фахівець з B2B продажів та роботи з корпоративними клієнтами.
+              Побудувала мережу з 500+ постійних корпоративних замовників.
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">B2B продажі</span>
+              <span class="skill-tag">CRM</span>
+              <span class="skill-tag">Переговори</span>
+            </div>
+          </article>
+ 
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--3">
+              <span class="team-card__initials">МП</span>
+            </div>
+            <h3 class="team-card__name">Михайло Петренко</h3>
+            <span class="team-card__role">Головний інженер</span>
+            <p class="team-card__bio">
+              Провідний спеціаліст з підбору аналогів та технічного консультування.
+              Знає характеристики тисяч компонентів напам'ять.
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">Схемотехніка</span>
+              <span class="skill-tag">Аналоги</span>
+              <span class="skill-tag">Консультації</span>
+            </div>
+          </article>
+ 
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--4">
+              <span class="team-card__initials">ІД</span>
+            </div>
+            <h3 class="team-card__name">Ірина Данченко</h3>
+            <span class="team-card__role">Керівник складу</span>
+            <p class="team-card__bio">
+              Організовує роботу складського комплексу площею 1 200 м².
+              Впровадила WMS-систему, що скоротила час комплектації на 40%.
+            </p>
+            <div class="team-card__skills">
+              <span class="skill-tag">Логістика</span>
+              <span class="skill-tag">WMS</span>
+              <span class="skill-tag">Оптимізація</span>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         ПАРТНЕРИ
+    ============================================================ -->
+    <section class="partners" aria-label="Партнери та бренди">
+      <div class="partners__container">
+        <h2 class="section-title">
+          Офіційні <span class="section-title__accent">партнери</span>
+        </h2>
+        <p class="section-subtitle">
+          Ми є авторизованими дистриб'юторами провідних світових брендів
+        </p>
+ 
+        <div class="partners__grid">
+          <div class="partner-logo">
+            <span class="partner-logo__name">Vishay</span>
+            <span class="partner-logo__type">Резистори, конденсатори</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">Murata</span>
+            <span class="partner-logo__type">Керамічні компоненти</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">Yageo</span>
+            <span class="partner-logo__type">Пасивні компоненти</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">ST Micro</span>
+            <span class="partner-logo__type">Мікроконтролери, МС</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">Texas Inst.</span>
+            <span class="partner-logo__type">Аналогова електроніка</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">Infineon</span>
+            <span class="partner-logo__type">Силова електроніка</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">NXP</span>
+            <span class="partner-logo__type">Мікроконтролери</span>
+          </div>
+          <div class="partner-logo">
+            <span class="partner-logo__name">Würth</span>
+            <span class="partner-logo__type">Індуктивні компоненти</span>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         ВІДГУКИ (вкладені списки + псевдокласи :nth-child)
+    ============================================================ -->
+    <section class="reviews" aria-label="Відгуки клієнтів">
+      <div class="reviews__container">
+        <h2 class="section-title">
+          Відгуки <span class="section-title__accent">клієнтів</span>
+        </h2>
+ 
+        <div class="reviews__grid">
+ 
+          <article class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">АК</div>
+              <div>
+                <strong class="review-card__name">Андрій Кириленко</strong>
+                <span class="review-card__company">ТОВ «ЕлектроСистеми»</span>
+              </div>
+              <div class="review-card__stars">★★★★★</div>
+            </div>
+            <blockquote class="review-card__text">
+              Співпрацюємо з ElectroHub вже 5 років. Завжди є потрібні компоненти,
+              швидка доставка, адекватні ціни. Рекомендую всім виробникам!
+            </blockquote>
+            <div class="review-card__meta">Замовляє з 2019 року</div>
+          </article>
+ 
+          <article class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">СБ</div>
+              <div>
+                <strong class="review-card__name">Сергій Бондаренко</strong>
+                <span class="review-card__company">Радіоаматор, м. Харків</span>
+              </div>
+              <div class="review-card__stars">★★★★★</div>
+            </div>
+            <blockquote class="review-card__text">
+              Відмінний магазин для хобі-проектів. Знаходжу навіть рідкісні компоненти.
+              Технічна підтримка допомогла підібрати аналог на застарілу деталь.
+            </blockquote>
+            <div class="review-card__meta">Замовляє з 2021 року</div>
+          </article>
+ 
+          <article class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">ОМ</div>
+              <div>
+                <strong class="review-card__name">Оксана Мельник</strong>
+                <span class="review-card__company">«РобоТех Лаб»</span>
+              </div>
+              <div class="review-card__stars">★★★★☆</div>
+            </div>
+            <blockquote class="review-card__text">
+              Купуємо компоненти для навчальних робототехнічних наборів.
+              Великий асортимент мікроконтролерів та сенсорів. Дякуємо за знижки для освіти!
+            </blockquote>
+            <div class="review-card__meta">Замовляє з 2022 року</div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         КОНТАКТИ + ВКЛАДЕНИЙ СПИСОК
+    ============================================================ -->
+    <section class="contacts-section" aria-label="Контактна інформація">
+      <div class="contacts-section__container">
+        <h2 class="section-title">
+          Контактна <span class="section-title__accent">інформація</span>
+        </h2>
+ 
+        <div class="contacts-section__grid">
+ 
+          <div class="contact-info">
+            <h3 class="contact-info__title">Офіси та склади</h3>
+ 
+            <!-- Вкладений список -->
+            <ul class="contact-list">
+              <li class="contact-list__item contact-list__item--main">
+                📍 Головний офіс та склад
+                <ul class="contact-list__sub">
+                  <li>м. Харків, вул. Сумська, 1</li>
+                  <li>Пн–Пт: 9:00 — 18:00</li>
+                  <li>Сб: 10:00 — 15:00</li>
+                  <li>📞 +38 (044) 123-45-67</li>
+                </ul>
+              </li>
+              <li class="contact-list__item contact-list__item--main">
+                📍 Філія Київ
+                <ul class="contact-list__sub">
+                  <li>м. Київ, просп. Перемоги, 42</li>
+                  <li>Пн–Пт: 9:00 — 18:00</li>
+                  <li>📞 +38 (044) 987-65-43</li>
+                </ul>
+              </li>
+              <li class="contact-list__item contact-list__item--main">
+                📍 Філія Дніпро
+                <ul class="contact-list__sub">
+                  <li>м. Дніпро, вул. Робоча, 55</li>
+                  <li>Пн–Пт: 10:00 — 17:00</li>
+                  <li>📞 +38 (056) 321-11-22</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+ 
+          <div class="contact-map">
+            <h3 class="contact-info__title">Ми на карті</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.0!2d36.23!3d49.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzM2LjAiTiAzNsKwMTMnNDguMCJF!5e0!3m2!1suk!2sua!4v1234567890"
+              width="100%"
+              height="320"
+              style="border:0; border-radius:12px;"
+              allowfullscreen=""
+              loading="lazy"
+              title="Карта розташування ElectroHub Харків"
+            ></iframe>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         ЕФЕКТ ПОСТУПОВОГО ВИТИРАННЯ (JS демо)
+    ============================================================ -->
+    <section class="erase-section" aria-label="Демонстрація ефекту витирання">
+      <div class="erase-section__container">
+        <h2 class="section-title">
+          Демо <span class="section-title__accent">ефектів JS</span>
+        </h2>
+        <div class="erase-demo">
+          <p id="eraseTarget" class="erase-demo__text">
+            Цей текст поступово зникне при натисканні кнопки.
+            ElectroHub — ваш надійний постачальник радіодеталей!
+            Резистори, конденсатори, транзистори, мікросхеми та багато іншого.
+          </p>
+          <div class="erase-demo__controls">
+            <button onclick="startErase()" class="btn btn--outline">
+              ✦ Почати витирання
+            </button>
+            <button onclick="resetErase()" class="btn btn--primary">
+              ↺ Відновити текст
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============================================================
+         СТРИБАЮЧА КАРТИНКА + розмір шрифту (JS демо)
+    ============================================================ -->
+    <section class="js-demo-section" aria-label="JS демонстрація">
+      <div class="js-demo-section__container">
+        <h2 class="section-title">
+          Інтерактивні <span class="section-title__accent">можливості</span>
+        </h2>
+ 
+        <div class="js-demo-grid">
+ 
+          <div class="demo-card">
+            <h3 class="demo-card__title">🔤 Зміна розміру шрифту</h3>
+            <p id="fontDemoText" class="demo-card__text">
+              Цей абзац демонструє зміну розміру шрифту через JavaScript.
+            </p>
+            <div class="demo-card__controls">
+              <button onclick="changeFontSize(12)" class="btn btn--outline btn--sm">12px</button>
+              <button onclick="changeFontSize(16)" class="btn btn--outline btn--sm">16px</button>
+              <button onclick="changeFontSize(20)" class="btn btn--outline btn--sm">20px</button>
+              <button onclick="changeFontSize(26)" class="btn btn--outline btn--sm">26px</button>
+            </div>
+            <div class="demo-card__controls" style="margin-top:8px">
+              <button onclick="changeAllParagraphs()" class="btn btn--primary btn--sm">
+                Змінити всі &lt;p&gt; на сторінці
+              </button>
+            </div>
+          </div>
+ 
+          <div class="demo-card">
+            <h3 class="demo-card__title">🐇 Стрибаюча деталь</h3>
+            <p class="demo-card__text">
+              Натисніть кнопку — іконка компонента буде кожну секунду
+              з'являтися у випадковому місці екрану.
+            </p>
+            <div class="demo-card__controls">
+              <button onclick="toggleJumping()" id="jumpBtn" class="btn btn--primary btn--sm">
+                ▶ Запустити
+              </button>
+            </div>
+          </div>
+ 
+          <div class="demo-card">
+            <h3 class="demo-card__title">🍪 Cookie та вибір теми</h3>
+            <p class="demo-card__text">
+              Ваш вибір кольорової теми зберігається в Cookie і запам'ятовується
+              при наступному відвідуванні.
+            </p>
+            <div class="demo-card__controls">
+              <button onclick="setTheme('green')"  class="btn btn--outline btn--sm theme-btn" data-theme="green">🟢 Зелена</button>
+              <button onclick="setTheme('blue')"   class="btn btn--outline btn--sm theme-btn" data-theme="blue">🔵 Синя</button>
+              <button onclick="setTheme('orange')" class="btn btn--outline btn--sm theme-btn" data-theme="orange">🟠 Помаранча</button>
+            </div>
+            <p id="themeStatus" class="demo-card__status"></p>
+          </div>
+ 
+          <div class="demo-card">
+            <h3 class="demo-card__title">🌐 Інформація про браузер</h3>
+            <div id="browserDetails" class="demo-card__browser-info">
+              Завантаження...
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">⚡ ElectroHub</span>
+          <p class="footer__tagline">
+            Провідний постачальник електронних компонентів в Україні з 2008 року
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
+            <a href="#" class="footer__social-link" aria-label="Telegram">tg</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Каталог</h4>
+          <ul class="footer__list">
+            <li><a href="catalog.html#resistors"     class="footer__link">Резистори</a></li>
+            <li><a href="catalog.html#capacitors"    class="footer__link">Конденсатори</a></li>
+            <li><a href="catalog.html#transistors"   class="footer__link">Транзистори</a></li>
+            <li><a href="catalog.html#diodes"        class="footer__link">Діоди</a></li>
+            <li><a href="catalog.html#microcircuits" class="footer__link">Мікросхеми</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Компанія</h4>
+          <ul class="footer__list">
+            <li><a href="layout.html"         class="footer__link">Про нас</a></li>
+            <li><a href="#"                   class="footer__link">Доставка і оплата</a></li>
+            <li><a href="index.html#contacts" class="footer__link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h4 class="footer__heading">Контакти</h4>
+          <p>📞 +38 (044) 123-45-67</p>
+          <p>📧 info@electrohub.ua</p>
+          <p>📍 м. Харків, вул. Сумська, 1</p>
+          <p>🕐 Пн–Пт: 9:00 — 18:00</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2008–<span id="currentYear"></span> ElectroHub. Всі права захищені.</p>
+        <p id="browserInfo" class="footer__browser"></p>
+      </div>
+    </div>
+  </footer>
+ 
+  <a href="#" class="float-btn" aria-label="Вгору">
+    <span class="float-btn__icon">↑</span>
+  </a>
+ 
+  <div id="jumpingImage" class="jumping-image" aria-hidden="true">⚙️</div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
