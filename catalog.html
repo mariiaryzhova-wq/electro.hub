@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог радіодеталей ElectroHub — резистори, конденсатори, транзистори, діоди, мікросхеми, котушки індуктивності. Понад 50 000 позицій.">
+  <meta name="keywords" content="каталог радіодеталей, резистори купити, конденсатори, транзистори, мікросхеми, діоди, котушки">
+  <meta name="author" content="ElectroHub">
+  <title>Каталог радіодеталей — ElectroHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="catalog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <!-- Хлібні крихти -->
+  <nav class="breadcrumbs" aria-label="breadcrumb">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Головна</a></li>
+      <li class="breadcrumbs__item breadcrumbs__item--active"><a href="catalog.html" class="breadcrumbs__link">Каталог</a></li>
+    </ol>
+  </nav>
+ 
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-icon">⚡</span>
+        <div class="header__logo-text">
+          <span class="header__logo-main">ElectroHub</span>
+          <span class="header__logo-sub">Радіодеталі & Компоненти</span>
+        </div>
+      </a>
+ 
+      <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+      <label for="menu-toggle" class="header__burger" aria-label="Меню">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </label>
+ 
+      <nav class="header__nav nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="catalog.html" class="nav__link nav__link--active">Каталог ▾</a>
+            <ul class="nav__dropdown">
+              <li><a href="#resistors" class="nav__dropdown-link">Резистори</a></li>
+              <li><a href="#capacitors" class="nav__dropdown-link">Конденсатори</a></li>
+              <li><a href="#transistors" class="nav__dropdown-link">Транзистори</a></li>
+              <li><a href="#diodes" class="nav__dropdown-link">Діоди</a></li>
+              <li><a href="#microcircuits" class="nav__dropdown-link">Мікросхеми</a></li>
+              <li><a href="#inductors" class="nav__dropdown-link">Котушки</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#" class="nav__link">Послуги ▾</a>
+            <ul class="nav__dropdown">
+              <li><a href="#" class="nav__dropdown-link">Доставка</a></li>
+              <li><a href="#" class="nav__dropdown-link">Оптові замовлення</a></li>
+              <li><a href="#" class="nav__dropdown-link">Технічна підтримка</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="layout.html" class="nav__link">Про нас</a></li>
+          <li class="nav__item"><a href="index.html#contacts" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="main">
+ 
+    <!-- Заголовок каталогу -->
+    <section class="catalog-hero">
+      <div class="catalog-hero__container">
+        <h1 class="catalog-hero__title">Каталог <span class="section-title__accent">радіодеталей</span></h1>
+        <p class="catalog-hero__subtitle">Понад 50 000 найменувань електронних компонентів від провідних виробників світу</p>
+        <!-- Пошук -->
+        <div class="catalog-search">
+          <input type="text" id="searchInput" class="catalog-search__input form-input" placeholder="🔍  Пошук по каталогу... (напр: резистор 10k, BC547, 555)">
+          <button onclick="searchCatalog()" class="btn btn--primary">Знайти</button>
+        </div>
+        <div id="searchResult" class="catalog-search__result"></div>
+      </div>
+    </section>
+ 
+    <!-- Швидка навігація по категоріях -->
+    <nav class="cat-nav" aria-label="Навігація по категоріях">
+      <div class="cat-nav__container">
+        <a href="#resistors"   class="cat-nav__item">🔴 Резистори</a>
+        <a href="#capacitors"  class="cat-nav__item">🔵 Конденсатори</a>
+        <a href="#transistors" class="cat-nav__item">🟢 Транзистори</a>
+        <a href="#diodes"      class="cat-nav__item">🟡 Діоди</a>
+        <a href="#microcircuits" class="cat-nav__item">🟠 Мікросхеми</a>
+        <a href="#inductors"   class="cat-nav__item">🟣 Котушки</a>
+      </div>
+    </nav>
+ 
+    <!-- ===== РЕЗИСТОРИ ===== -->
+    <section class="cat-section" id="resistors">
+      <div class="cat-section__container">
+        <div class="cat-section__header">
+          <div class="cat-section__icon-wrap cat-section__icon-wrap--red">🔴</div>
+          <div>
+            <h2 class="cat-section__title">Резистори</h2>
+            <p class="cat-section__desc">Постійні, змінні, термо- та фоторезистори. Типи: SMD, THT, дротові. Потужність 0.125Вт — 100Вт.</p>
+          </div>
+        </div>
+ 
+        <div class="product-grid" id="resistors-grid">
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ff4444?text=R+0805" alt="Резистор SMD 0805 10кОм" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">SMD Резистор</span>
+              <h3 class="product-card__name">Резистор SMD 0805 10кОм 1%</h3>
+              <p class="product-card__specs">
+                <span>Номінал: <strong>10 кОм</strong></span>
+                <span>Допуск: <strong>±1%</strong></span>
+                <span>Потужність: <strong>0.125 Вт</strong></span>
+                <span>Корпус: <strong>0805</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>R-10K-0805-1</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">0.45 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('R-10K-0805-1','Резистор SMD 0805 10кОм')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ff6666?text=R+THT" alt="Резистор THT 4.7кОм" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">THT Резистор</span>
+              <h3 class="product-card__name">Резистор CF 4.7кОм 0.25Вт 5%</h3>
+              <p class="product-card__specs">
+                <span>Номінал: <strong>4.7 кОм</strong></span>
+                <span>Допуск: <strong>±5%</strong></span>
+                <span>Потужність: <strong>0.25 Вт</strong></span>
+                <span>Тип: <strong>CF вугільний</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>R-4k7-0.25-5</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">0.30 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('R-4k7-0.25-5','Резистор 4.7кОм 0.25Вт')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ff8888?text=NTC" alt="Терморезистор NTC" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Терморезистор</span>
+              <h3 class="product-card__name">Терморезистор NTC 10кОм 25°C</h3>
+              <p class="product-card__specs">
+                <span>Опір: <strong>10 кОм при 25°C</strong></span>
+                <span>B-коефіцієнт: <strong>3950K</strong></span>
+                <span>Діапазон: <strong>-40...+125°C</strong></span>
+                <span>Корпус: <strong>THT</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>NTC-10K-3950</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">3.20 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('NTC-10K-3950','Терморезистор NTC 10кОм')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--low-stock">
+            <div class="product-card__badge product-card__badge--low">Мало</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ffaaaa?text=Potentio" alt="Потенціометр 10кОм" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Потенціометр</span>
+              <h3 class="product-card__name">Потенціометр 10кОм B10K лінійний</h3>
+              <p class="product-card__specs">
+                <span>Номінал: <strong>10 кОм</strong></span>
+                <span>Характер.: <strong>B (лінійний)</strong></span>
+                <span>Потужність: <strong>0.5 Вт</strong></span>
+                <span>Вісь: <strong>6мм</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>POT-B10K-6</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">12.50 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('POT-B10K-6','Потенціометр B10K')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ff5555?text=R+2W" alt="Резистор дротовий 2Вт" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Дротовий резистор</span>
+              <h3 class="product-card__name">Резистор дротовий 100 Ом 2Вт ±5%</h3>
+              <p class="product-card__specs">
+                <span>Номінал: <strong>100 Ом</strong></span>
+                <span>Потужність: <strong>2 Вт</strong></span>
+                <span>Допуск: <strong>±5%</strong></span>
+                <span>Тип: <strong>дротовий</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>RW-100R-2W</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">4.80 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('RW-100R-2W','Резистор дротовий 100Ом 2Вт')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/dd3333?text=LDR" alt="Фоторезистор LDR" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Фоторезистор</span>
+              <h3 class="product-card__name">Фоторезистор LDR GL5528 5мм</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>GL5528</strong></span>
+                <span>Світло: <strong>10-20 кОм</strong></span>
+                <span>Темрява: <strong>&gt;1 МОм</strong></span>
+                <span>Діаметр: <strong>5 мм</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>LDR-GL5528</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">5.50 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('LDR-GL5528','Фоторезистор GL5528')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+        </div><!-- /product-grid resistors -->
+      </div>
+    </section>
+ 
+    <!-- ===== КОНДЕНСАТОРИ ===== -->
+    <section class="cat-section cat-section--alt" id="capacitors">
+      <div class="cat-section__container">
+        <div class="cat-section__header">
+          <div class="cat-section__icon-wrap cat-section__icon-wrap--blue">🔵</div>
+          <div>
+            <h2 class="cat-section__title">Конденсатори</h2>
+            <p class="cat-section__desc">Електролітичні, керамічні, плівкові, танталові. Напруга від 6.3В до 450В. SMD та THT виконання.</p>
+          </div>
+        </div>
+ 
+        <div class="product-grid">
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/4444ff?text=Electro" alt="Конденсатор електролітичний" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Електролітичний</span>
+              <h3 class="product-card__name">Конденсатор 100мкФ 25В 105°C</h3>
+              <p class="product-card__specs">
+                <span>Ємність: <strong>100 мкФ</strong></span>
+                <span>Напруга: <strong>25 В</strong></span>
+                <span>Температура: <strong>105°C</strong></span>
+                <span>Розмір: <strong>8×12мм</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>C-E100-25V</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">2.10 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('C-E100-25V','Конденсатор 100мкФ 25В')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/6688ff?text=Ceramic" alt="Конденсатор керамічний 100нФ" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Керамічний SMD</span>
+              <h3 class="product-card__name">Конденсатор керамічний 100нФ 50В X7R 0805</h3>
+              <p class="product-card__specs">
+                <span>Ємність: <strong>100 нФ</strong></span>
+                <span>Напруга: <strong>50 В</strong></span>
+                <span>Діелектрик: <strong>X7R</strong></span>
+                <span>Корпус: <strong>0805</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>C-K100N-50V-0805</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">0.35 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('C-K100N-50V-0805','Конденсатор 100нФ 0805')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/2266cc?text=Film+Cap" alt="Плівковий конденсатор" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Плівковий</span>
+              <h3 class="product-card__name">Конденсатор плівковий 1мкФ 63В ±5%</h3>
+              <p class="product-card__specs">
+                <span>Ємність: <strong>1 мкФ</strong></span>
+                <span>Напруга: <strong>63 В</strong></span>
+                <span>Допуск: <strong>±5%</strong></span>
+                <span>Тип: <strong>MKT</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>C-F1U-63V-MKT</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">4.60 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('C-F1U-63V-MKT','Конденсатор плівковий 1мкФ')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/004499?text=Tantal" alt="Танталовий конденсатор" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Танталовий SMD</span>
+              <h3 class="product-card__name">Конденсатор танталовий 10мкФ 16В case A</h3>
+              <p class="product-card__specs">
+                <span>Ємність: <strong>10 мкФ</strong></span>
+                <span>Напруга: <strong>16 В</strong></span>
+                <span>Корпус: <strong>case A (3216)</strong></span>
+                <span>ESR: <strong>0.8 Ом</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>C-T10U-16V-A</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">8.90 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('C-T10U-16V-A','Конденсатор танталовий 10мкФ')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/3355bb?text=450V+Cap" alt="Конденсатор 1000мкФ 450В" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Електролітичний ВВ</span>
+              <h3 class="product-card__name">Конденсатор 1000мкФ 450В 85°C</h3>
+              <p class="product-card__specs">
+                <span>Ємність: <strong>1000 мкФ</strong></span>
+                <span>Напруга: <strong>450 В</strong></span>
+                <span>Температура: <strong>85°C</strong></span>
+                <span>Розмір: <strong>35×50мм</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>C-E1000-450V</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">85.00 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('C-E1000-450V','Конденсатор 1000мкФ 450В')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--out-stock">
+            <div class="product-card__badge product-card__badge--out">Очікується</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/1133aa?text=SuperCap" alt="Суперконденсатор" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Суперконденсатор</span>
+              <h3 class="product-card__name">Суперконденсатор 1Ф 5.5В</h3>
+              <p class="product-card__specs">
+                <span>Ємність: <strong>1 Ф</strong></span>
+                <span>Напруга: <strong>5.5 В</strong></span>
+                <span>ESR: <strong>35 Ом</strong></span>
+                <span>Корпус: <strong>THT</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>SC-1F-5V5</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">42.00 грн/шт</span>
+                <button class="btn btn--outline btn--sm" disabled>Очікується</button>
+              </div>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ===== ТРАНЗИСТОРИ ===== -->
+    <section class="cat-section" id="transistors">
+      <div class="cat-section__container">
+        <div class="cat-section__header">
+          <div class="cat-section__icon-wrap cat-section__icon-wrap--green">🟢</div>
+          <div>
+            <h2 class="cat-section__title">Транзистори</h2>
+            <p class="cat-section__desc">Біполярні NPN/PNP, польові MOSFET/JFET, IGBT, силові та ВЧ транзистори.</p>
+          </div>
+        </div>
+ 
+        <div class="product-grid">
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/00bb44?text=BC547" alt="Транзистор BC547" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">NPN Біполярний</span>
+              <h3 class="product-card__name">Транзистор BC547B NPN 45В 100мА</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>NPN</strong></span>
+                <span>Uкб: <strong>50 В</strong></span>
+                <span>Iк: <strong>100 мА</strong></span>
+                <span>hFE: <strong>200-450</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>T-BC547B</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">1.80 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('T-BC547B','Транзистор BC547B')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/009933?text=2N2222" alt="Транзистор 2N2222" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">NPN Біполярний</span>
+              <h3 class="product-card__name">Транзистор 2N2222A NPN 40В 600мА</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>NPN</strong></span>
+                <span>Uкб: <strong>60 В</strong></span>
+                <span>Iк: <strong>600 мА</strong></span>
+                <span>fT: <strong>300 МГц</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>T-2N2222A</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">2.40 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('T-2N2222A','Транзистор 2N2222A')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/44cc66?text=IRF540" alt="MOSFET IRF540N" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">N-MOSFET</span>
+              <h3 class="product-card__name">MOSFET IRF540N N-канал 100В 33А</h3>
+              <p class="product-card__specs">
+                <span>Канал: <strong>N</strong></span>
+                <span>Uдс: <strong>100 В</strong></span>
+                <span>Iд: <strong>33 А</strong></span>
+                <span>Rds: <strong>44 мОм</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>T-IRF540N</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">28.50 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('T-IRF540N','MOSFET IRF540N')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/228833?text=TIP120" alt="Дарлінгтон TIP120" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Дарлінгтон NPN</span>
+              <h3 class="product-card__name">Транзистор TIP120 NPN Darlington 60В 5А</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>NPN Darlington</strong></span>
+                <span>Uкб: <strong>60 В</strong></span>
+                <span>Iк: <strong>5 А</strong></span>
+                <span>hFE: <strong>min 1000</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>T-TIP120</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">14.80 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('T-TIP120','Транзистор TIP120')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ===== ДІОДИ ===== -->
+    <section class="cat-section cat-section--alt" id="diodes">
+      <div class="cat-section__container">
+        <div class="cat-section__header">
+          <div class="cat-section__icon-wrap cat-section__icon-wrap--yellow">🟡</div>
+          <div>
+            <h2 class="cat-section__title">Діоди</h2>
+            <p class="cat-section__desc">Випрямні, імпульсні, стабілітрони (Zener), варикапи, світлодіоди (LED), шоттки.</p>
+          </div>
+        </div>
+ 
+        <div class="product-grid">
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ccaa00?text=1N4007" alt="Діод 1N4007" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Випрямний діод</span>
+              <h3 class="product-card__name">Діод 1N4007 1А 1000В</h3>
+              <p class="product-card__specs">
+                <span>Iпр: <strong>1 А</strong></span>
+                <span>Uзвор: <strong>1000 В</strong></span>
+                <span>Uпр: <strong>1.1 В</strong></span>
+                <span>Корпус: <strong>DO-41</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>D-1N4007</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">0.80 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('D-1N4007','Діод 1N4007')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ff3300?text=LED+RED" alt="Світлодіод червоний 5мм" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Світлодіод</span>
+              <h3 class="product-card__name">Світлодіод 5мм червоний 2V 20мА</h3>
+              <p class="product-card__specs">
+                <span>Колір: <strong>червоний</strong></span>
+                <span>Uпр: <strong>2.0-2.2 В</strong></span>
+                <span>Струм: <strong>20 мА</strong></span>
+                <span>Яскравість: <strong>8 мКд</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>LED-5R-20</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">0.55 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('LED-5R-20','Світлодіод 5мм червоний')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/88aa00?text=Zener+5V1" alt="Стабілітрон 5.1В" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Стабілітрон</span>
+              <h3 class="product-card__name">Стабілітрон 1N4733A 5.1В 1Вт</h3>
+              <p class="product-card__specs">
+                <span>Uстаб: <strong>5.1 В</strong></span>
+                <span>Потужність: <strong>1 Вт</strong></span>
+                <span>Izm: <strong>178 мА</strong></span>
+                <span>Корпус: <strong>DO-41</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>D-Z5V1-1W</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">1.90 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('D-Z5V1-1W','Стабілітрон 5.1В')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ffbb00?text=Schottky" alt="Діод Шоттки" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Діод Шоттки</span>
+              <h3 class="product-card__name">Діод Шоттки 1N5819 1А 40В</h3>
+              <p class="product-card__specs">
+                <span>Iпр: <strong>1 А</strong></span>
+                <span>Uзвор: <strong>40 В</strong></span>
+                <span>Uпр: <strong>0.6 В</strong></span>
+                <span>Trr: <strong>дуже малий</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>D-1N5819</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">1.20 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('D-1N5819','Діод Шоттки 1N5819')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ===== МІКРОСХЕМИ ===== -->
+    <section class="cat-section" id="microcircuits">
+      <div class="cat-section__container">
+        <div class="cat-section__header">
+          <div class="cat-section__icon-wrap cat-section__icon-wrap--orange">🟠</div>
+          <div>
+            <h2 class="cat-section__title">Мікросхеми</h2>
+            <p class="cat-section__desc">Логічні, аналогові, мікроконтролери, стабілізатори напруги, операційні підсилювачі, таймери.</p>
+          </div>
+        </div>
+ 
+        <div class="product-grid">
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/ff6600?text=NE555" alt="Таймер NE555" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Таймер</span>
+              <h3 class="product-card__name">Таймер NE555P DIP-8</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>Таймер</strong></span>
+                <span>Живлення: <strong>4.5-16 В</strong></span>
+                <span>Точність: <strong>±1%</strong></span>
+                <span>Корпус: <strong>DIP-8</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>IC-NE555P</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">4.50 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('IC-NE555P','Таймер NE555P')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/dd5500?text=LM358" alt="Операційний підсилювач LM358" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">ОП підсилювач</span>
+              <h3 class="product-card__name">Операційний підсилювач LM358N DIP-8</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>Подвійний ОП</strong></span>
+                <span>Живлення: <strong>3-32 В</strong></span>
+                <span>GBW: <strong>1 МГц</strong></span>
+                <span>Корпус: <strong>DIP-8</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>IC-LM358N</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">6.80 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('IC-LM358N','ОП LM358N')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/cc4400?text=L7805" alt="Стабілізатор L7805" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Стабілізатор</span>
+              <h3 class="product-card__name">Стабілізатор L7805CV +5В 1.5А TO-220</h3>
+              <p class="product-card__specs">
+                <span>Uвих: <strong>5 В</strong></span>
+                <span>Iмакс: <strong>1.5 А</strong></span>
+                <span>Uвх: <strong>7-35 В</strong></span>
+                <span>Корпус: <strong>TO-220</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>IC-L7805CV</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">12.00 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('IC-L7805CV','Стабілізатор L7805CV')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/bb3300?text=ATmega328" alt="Мікроконтролер ATmega328P" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Мікроконтролер</span>
+              <h3 class="product-card__name">Мікроконтролер ATmega328P-PU DIP-28</h3>
+              <p class="product-card__specs">
+                <span>Ядро: <strong>AVR 8-bit</strong></span>
+                <span>Flash: <strong>32 КБ</strong></span>
+                <span>Частота: <strong>до 20 МГц</strong></span>
+                <span>Корпус: <strong>DIP-28</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>IC-ATmega328P</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">95.00 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('IC-ATmega328P','ATmega328P-PU')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/993300?text=74HC595" alt="Зсувний регістр 74HC595" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Логічна ІС</span>
+              <h3 class="product-card__name">Зсувний регістр 74HC595N DIP-16</h3>
+              <p class="product-card__specs">
+                <span>Тип: <strong>8-bit SIPO</strong></span>
+                <span>Живлення: <strong>2-6 В</strong></span>
+                <span>Частота: <strong>до 100 МГц</strong></span>
+                <span>Корпус: <strong>DIP-16</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>IC-74HC595N</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">7.20 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('IC-74HC595N','74HC595N')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--low-stock">
+            <div class="product-card__badge product-card__badge--low">Мало</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/aa4400?text=ESP32" alt="Модуль ESP32" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">WiFi/BT модуль</span>
+              <h3 class="product-card__name">Модуль ESP32-WROOM-32D 4МБ</h3>
+              <p class="product-card__specs">
+                <span>CPU: <strong>Xtensa LX6 240МГц</strong></span>
+                <span>Flash: <strong>4 МБ</strong></span>
+                <span>WiFi: <strong>802.11 b/g/n</strong></span>
+                <span>BT: <strong>v4.2 BLE</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>IC-ESP32-WROOM32</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">185.00 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('IC-ESP32-WROOM32','ESP32-WROOM-32D')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ===== КОТУШКИ ===== -->
+    <section class="cat-section cat-section--alt" id="inductors">
+      <div class="cat-section__container">
+        <div class="cat-section__header">
+          <div class="cat-section__icon-wrap cat-section__icon-wrap--purple">🟣</div>
+          <div>
+            <h2 class="cat-section__title">Котушки індуктивності</h2>
+            <p class="cat-section__desc">Дроселі SMD та THT, трансформатори, силові та ВЧ котушки, феромагнітні сердечники.</p>
+          </div>
+        </div>
+ 
+        <div class="product-grid">
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/8800cc?text=100uH" alt="Дросель 100мкГн" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Дросель SMD</span>
+              <h3 class="product-card__name">Дросель SMD 100мкГн 0.4А 0805</h3>
+              <p class="product-card__specs">
+                <span>Індуктивність: <strong>100 мкГн</strong></span>
+                <span>Струм: <strong>0.4 А</strong></span>
+                <span>DCR: <strong>1.5 Ом</strong></span>
+                <span>Корпус: <strong>0805</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>L-100U-0805</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">3.20 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('L-100U-0805','Дросель 100мкГн SMD')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/6600aa?text=Toroid" alt="Тороїдальний трансформатор" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Тороїдальний дросель</span>
+              <h3 class="product-card__name">Дросель тороїдальний 1мГн 2А THT</h3>
+              <p class="product-card__specs">
+                <span>Індуктивність: <strong>1 мГн</strong></span>
+                <span>Струм: <strong>2 А</strong></span>
+                <span>DCR: <strong>0.15 Ом</strong></span>
+                <span>Тип: <strong>Тороїд</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>L-1M-2A-TOROID</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">18.50 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('L-1M-2A-TOROID','Дросель тороїд 1мГн')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="product-card product-card--in-stock">
+            <div class="product-card__badge">В наявності</div>
+            <div class="product-card__img-wrap">
+              <img src="https://placehold.co/200x140/0d1117/440088?text=Ferrite" alt="Феритове кільце" class="product-card__img" width="200" height="140">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__category">Феритовий сердечник</span>
+              <h3 class="product-card__name">Феритове кільце T50-43 12.7мм</h3>
+              <p class="product-card__specs">
+                <span>Матеріал: <strong>Ферит тип 43</strong></span>
+                <span>Зовн.D: <strong>12.7 мм</strong></span>
+                <span>AL: <strong>1075 нГн/виток²</strong></span>
+                <span>Частота: <strong>до 50 МГц</strong></span>
+              </p>
+              <div class="product-card__article">Арт: <code>CORE-T50-43</code></div>
+              <div class="product-card__footer">
+                <span class="product-card__price">22.00 грн/шт</span>
+                <button class="btn btn--primary btn--sm" onclick="addToCart('CORE-T50-43','Феритове кільце T50-43')">До кошика</button>
+              </div>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Кошик -->
+    <section class="cart-section" id="cart">
+      <div class="cart-section__container">
+        <h2 class="section-title">🛒 Ваш <span class="section-title__accent">кошик</span></h2>
+        <div id="cartContent" class="cart-content">
+          <p class="cart-empty">Кошик порожній. Додайте товари з каталогу.</p>
+        </div>
+        <div id="cartTotal" class="cart-total" style="display:none">
+          <button onclick="clearCart()" class="btn btn--outline">🗑 Очистити</button>
+          <a href="index.html#contacts" class="btn btn--primary">📦 Оформити замовлення</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Сортування / JS демо -->
+    <section class="sort-section">
+      <div class="sort-section__container">
+        <h2 class="section-title">Сортування <span class="section-title__accent">компонентів</span></h2>
+        <p class="section-subtitle">Демонстрація сортування масивів JavaScript</p>
+        <div class="sort-controls">
+          <button onclick="sortByName()" class="btn btn--outline">Сортувати за назвою</button>
+          <button onclick="sortByPrice()" class="btn btn--outline">Сортувати за ціною</button>
+          <button onclick="resetSort()" class="btn btn--primary">Скинути</button>
+        </div>
+        <div id="sortResult" class="sort-result"></div>
+      </div>
+    </section>
+ 
+    <!-- Календар -->
+    <section class="calendar-section">
+      <div class="calendar-section__container">
+        <h2 class="section-title">Календар <span class="section-title__accent">поставок</span></h2>
+        <p class="section-subtitle">Поточний місяць — дати надходження нових партій товару</p>
+        <div id="calendar" class="calendar"></div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">⚡ ElectroHub</span>
+          <p class="footer__tagline">Провідний постачальник електронних компонентів в Україні</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">fb</a>
+            <a href="#" class="footer__social-link" aria-label="Telegram">tg</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Каталог</h4>
+          <ul class="footer__list">
+            <li><a href="#resistors"     class="footer__link">Резистори</a></li>
+            <li><a href="#capacitors"    class="footer__link">Конденсатори</a></li>
+            <li><a href="#transistors"   class="footer__link">Транзистори</a></li>
+            <li><a href="#diodes"        class="footer__link">Діоди</a></li>
+            <li><a href="#microcircuits" class="footer__link">Мікросхеми</a></li>
+            <li><a href="#inductors"     class="footer__link">Котушки</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Компанія</h4>
+          <ul class="footer__list">
+            <li><a href="layout.html"         class="footer__link">Про нас</a></li>
+            <li><a href="#"                   class="footer__link">Доставка і оплата</a></li>
+            <li><a href="index.html#contacts" class="footer__link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h4 class="footer__heading">Контакти</h4>
+          <p>📞 +38 (044) 123-45-67</p>
+          <p>📧 info@electrohub.ua</p>
+          <p>📍 м. Харків, вул. Сумська, 1</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2008–<span id="currentYear"></span> ElectroHub. Всі права захищені.</p>
+        <p id="browserInfo" class="footer__browser"></p>
+      </div>
+    </div>
+  </footer>
+ 
+  <a href="#" class="float-btn" aria-label="Вгору">
+    <span class="float-btn__icon">↑</span>
+  </a>
+ 
+  <div id="jumpingImage" class="jumping-image" aria-hidden="true">⚙️</div>
+  <script src="script.js"></script>
+</body>
+</html>
